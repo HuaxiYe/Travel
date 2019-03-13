@@ -41,9 +41,6 @@ export default {
         imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/50/26ffa31b56646402.png',desc: '亲子游'
       },{
          id: '0008',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1804/ff/fdf170ee89594b02.png',desc: '佛山必游'
-      },{
-         id: '0009',
         imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/b1/528a9e80403b8c02.png',desc: '玩转长隆'
       }] 
     }
@@ -58,7 +55,7 @@ export default {
         }
         pages[page].push(item)
       })  
-      return pages;
+      return pages
     }
   }
 }   
@@ -70,6 +67,8 @@ export default {
    .icons >>>.swiper-container
        height: 0
        padding-bottom: 50% 
+    .icons
+      margin-top: .1rem
      .icon
        position: relative
        overflow: hidden
