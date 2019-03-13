@@ -6,7 +6,7 @@
       <img class="item-img" :src="item.imgUrl" />
       <div class="item-info">
         <p class="item-title">{{item.title}}</p>
-        <p class="item-desc">{{item.desc}}}</p>
+        <p class="item-desc">{{item.desc}}</p>
         <button class="item-buttom">查看详情</button>
       </div>
      </li>
@@ -27,14 +27,14 @@ export default {
       desc: '美丽迷人的生态园'
     },{
       id: '0002',
-      imgUrl:'http://img1.qunarzz.com/sight/p0/1812/82/820670c947d2eb92a3.img.jpg_200x200_a6c78368.jpg',
-      title: '盈香生态园',
-      desc: '美丽迷人的生态园'
+      imgUrl:'http://img1.qunarzz.com/sight/p0/1603/a9/a9c236b3c1c7835890.img.jpg_200x200_bc63fda6.jpg',
+      title: '水乡百花园',
+      desc: '梦里水乡的生态园'
     },{
       id: '0003',
-      imgUrl:'http://img1.qunarzz.com/sight/p0/1812/82/820670c947d2eb92a3.img.jpg_200x200_a6c78368.jpg',
-      title: '盈香生态园',
-      desc: '美丽迷人的生态园'
+      imgUrl:'http://img1.qunarzz.com/sight/p0/1707/85/855e68f1cb85dbc6a3.water.jpg_200x200_73eb26f7.jpg',
+      title: '鹭湖半乡温泉',
+      desc: '温馨的鹭湖半乡温泉'
       }]
     }
   }
@@ -67,7 +67,7 @@ export default {
       font-size: .32rem
     .item-desc
       line-height: .4rem
-      color:$darkTextColor
+      color:#d1d1d1
       ellipsis()
     .item-buttom
       line-height: .44rem
