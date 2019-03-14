@@ -2,7 +2,7 @@
  <div>
    <div class="title">热销推荐</div>
    <ul>
-     <li class="item border-bottom" v-for="item of recommendList" :key="item.id">
+     <li class="item border-bottom" v-for="item of list" :key="item.id">
       <img class="item-img" :src="item.imgUrl" />
       <div class="item-info">
         <p class="item-title">{{item.title}}</p>
@@ -18,25 +18,8 @@
 
 export default {
   name: 'HomeRecommend',
-  data () {
-   return{
-    recommendList: [{
-      id: '0001',
-      imgUrl:'http://img1.qunarzz.com/sight/p0/1812/82/820670c947d2eb92a3.img.jpg_200x200_a6c78368.jpg',
-      title: '盈香生态园',
-      desc: '美丽迷人的生态园'
-    },{
-      id: '0002',
-      imgUrl:'http://img1.qunarzz.com/sight/p0/1603/a9/a9c236b3c1c7835890.img.jpg_200x200_bc63fda6.jpg',
-      title: '水乡百花园',
-      desc: '梦里水乡的生态园'
-    },{
-      id: '0003',
-      imgUrl:'http://img1.qunarzz.com/sight/p0/1707/85/855e68f1cb85dbc6a3.water.jpg_200x200_73eb26f7.jpg',
-      title: '鹭湖半乡温泉',
-      desc: '温馨的鹭湖半乡温泉'
-      }]
-    }
+  props: {
+    list: Array
   }
 }
 </script>

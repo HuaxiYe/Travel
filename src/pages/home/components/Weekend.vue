@@ -4,7 +4,7 @@
     <ul>
       <li
         class="item border-bottom"
-        v-for="item of recommendList"
+        v-for="item of list"
         :key="item.id"
       >
         <div class="item-img-wrapper">
@@ -22,25 +22,8 @@
 <script>
 export default {
 name: 'HomeWeekend',
-  data () {
-   return{
-    recommendList: [{
-      id: '0001',
-      imgUrl:'http://img1.qunarzz.com/sight/source/1602/88/bf120edeaea383.jpg_r_640x214_f8591f7b.jpg',
-      title: '欢乐长隆',
-      desc: '世界欢乐汇聚长隆'
-    },{
-      id: '0002',
-      imgUrl:'http://img1.qunarzz.com/sight/source/1508/f8/cadd4e229d3402.jpg_r_640x214_c38fb221.jpg',
-      title: '盈香生态园',
-      desc: '美丽迷人的生态园'
-    },{
-      id: '0003',
-      imgUrl:'http://img1.qunarzz.com/sight/source/1811/b8/5d599bbdcf8b57.jpg_r_640x214_2ee055e3.jpg',
-      title: '盈香生态园',
-      desc: '美丽迷人的生态园'
-      }]
-    }
+props: {
+  list: Array
   }
 }
 </script>
